@@ -6,6 +6,7 @@ body {
   min-height: 100vh;
 }
 
+
 a {
   text-decoration: none;
   color: black;
@@ -44,13 +45,52 @@ a {
   gap: 8px;
 }
 
+.navBar {
+  display: flex;
+  align-items: center;
+}
+
 .navBar ul {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 4px;
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.navBar a {
+  display: block;
+  padding: 6px 12px;
+  font-size: 13px;
+  font-weight: 400;
+  color: #888885;
+  text-decoration: none;
+  border-radius: 9999px;
+  transition: all 150ms;
+}
+
+.navBar a:hover {
+  color: #111110;
+  background-color: #ebebea;
+}
+
+/* Hire Me button */
+.navBar li:last-child {
+  margin-left: 12px;
+}
+
+.navBar li:last-child a {
+  padding: 6px 16px;
+  font-weight: 500;
+  color: white;
+  background-color: #111110;
+  transition: background-color 200ms;
+}
+
+.navBar li:last-child a:hover {
+  color: white;
+  background-color: #0066ff;
 }
 
 .top-section {
@@ -66,9 +106,10 @@ a {
 
 .top-section h1 {
   font-size: clamp(48px, 9vw, 120px);
+  font-family: "Poppins", sans-serif;
   font-weight: 300;
   line-height: 1;
-  margin-top: 48px;
+  margin: 32px 0 32px;
   letter-spacing: -0.04em;
   color: #111110;
   max-width: 64rem; /* 1024px (Tailwind's max-w-5xl) */
@@ -89,8 +130,10 @@ a {
 }
 
 .status-text {
-  color: #888888;
-  font-size: 16px;
+  color: #888885;
+  font-size: 12px;
+  font-weight: 300;
+  font-family: "monospace", monospace;
 }
 
 .bottom-section {
@@ -98,7 +141,6 @@ a {
   flex-direction: row;
   justify-content: space-between;
   gap: 32px;
-  padding-top: 16px;
   align-items: flex-end;
 }
 
